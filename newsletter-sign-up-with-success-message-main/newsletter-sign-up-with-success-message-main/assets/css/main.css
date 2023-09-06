@@ -1,0 +1,39 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background: hsl(235, 18%, 26%);
+}
+
+body > * {
+    
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+article > h1{
+    font-size: xx-large;
+}
+
+body > section{
+    height: auto;
+    background: #fff;
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+
+    
+}
+section > * {
+    padding-left:40px ;
+    
+}
+
+body img{
+    margin: 10px ;
+}
+
+
