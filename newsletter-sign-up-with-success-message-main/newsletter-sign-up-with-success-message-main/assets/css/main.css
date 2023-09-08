@@ -1,6 +1,9 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url("/assets/fonts/Roboto-Bold.ttf");
+}
 
 body{
     margin:0;
@@ -15,15 +18,20 @@ body > * {
     padding: 10px 20px;
 }
 article > h1{
-    font-size: xx-large;
+    font-size: 48px;
+    font-family:'Roboto';
+    margin-top: 60px;
 }
+
+
 
 body > section{
     height: auto;
     background: #fff;
-    width: 80%;
+    width: 50%;
     margin: 40px auto;
     display: flex;
+    
 
     
 }
@@ -33,7 +41,29 @@ section > * {
 }
 
 body img{
-    margin: 10px ;
+    margin: 5px ;
+    display: inline-block;
+    width:380px;
 }
 
+label, input{
+    display: block; 
+    padding: 10px 0; /*Block : como columna y inline en una linea continua*/
+    width: 94%;
+    padding: 10px;
+    border-radius: 5px;
+}
+button{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    background-color:  hsl(235, 18%, 26%);
+    border-radius: 5px;
 
+}
+
+ul{
+    list-style: none;
+}
