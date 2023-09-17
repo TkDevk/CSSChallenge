@@ -1,0 +1,56 @@
+body {
+    background-image: url("/img/background.jpg");
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    /*Cover this xD*/
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#ovni {
+    display: block;
+
+
+}
+
+/*First create the transition*/
+
+@keyframes cowTransition {
+    from {
+        /*begin*/
+        transform: translateY(0);
+        
+
+    }
+
+    to {
+        /*end*/
+        transform: translateY(-250px);
+        display: none;  /*opacity dissapier cow*/
+        opacity: 0;
+        
+
+
+
+    }
+}
+
+/*Second of all, i have to create class or call the tag that i want to move*/
+#cow {
+    /*animation properties*/
+
+    animation-name: cowTransition;
+    animation-duration:6s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+
+
+   
+}
