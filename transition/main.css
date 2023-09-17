@@ -44,13 +44,23 @@ body {
     /*animation properties*/
 
     animation-name: cowTransition;
-    animation-duration:6s;
+    animation-duration:8s;
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
     animation-delay: 0;
     animation-iteration-count: 1;
-    animation-direction: reverse;
+    animation-direction: normal;
     animation-fill-mode: forwards;
+}
 
+#cow > p{
+    height: 30px;
+    width: 75px;
+    right:50%;
+    bottom:50%;
+    position: absolute;
+    border-radius: 20px;
+    background-color: white;
+    padding: black 10px;
+    text-align: center;
 
-   
 }
