@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'variable';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    width: 1440px;
+}
+body{
+    
+    background-color: var(--yellow);
+    padding: 2rem;
+
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%); 
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+.cardContainer{
+    
+    justify-content: center;
+    margin:auto;
+    background-color:var(--white);
+    height:auto;
+    width: 400px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    border: 1px var(--black) solid;
+    box-shadow: 20px 20px  var(--black);
+}
+.up{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   height: auto;
+   width: auto;
+
+}
+.mainImage{
+    object-fit: cover;
+    width: auto;
+    height: 210px;
+    border-radius: 0.5rem;
+    
+}
+button{
+   border:none;
+   background-color: var(--yellow);
+   border-radius: 5px;
+   color: var(--black);
+   font-weight: 800;
+   width: 100px;
+   height: 30px;
+}
+.publish{
+    font-family: 'variable', monospace;
+    font-weight: 600;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: auto;
+}
+.titleCard{
+    color:var(--yellow);
+    font-weight: 600;
+
+}
+p{
+    color:var(--grey);
+    font-family: 'variable', monospace;
+    font-weight: 600;
+}
+picture{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.userImg{
+    width: 32px;
+    height: 32px;
+}
+.attribution{
+    margin:50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user{
+    font-family: 'variable',monospace;
+    font-weight: 800;
+}
