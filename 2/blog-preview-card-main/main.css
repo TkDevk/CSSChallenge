@@ -80,6 +80,7 @@ button{
 .titleCard{
     color:var(--yellow);
     font-weight: 600;
+    cursor: pointer;
 
 }
 p{
@@ -105,4 +106,14 @@ picture{
 .user{
     font-family: 'variable',monospace;
     font-weight: 800;
+}
+
+@media screen and (max-width: 375px){
+    .cardContainer{
+        box-shadow: 10px 10px  var(--black);
+    }
+    .titleCard{
+        color:var(--black)
+    }
+    
 }
