@@ -1,11 +1,18 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'work-sans';
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
 }
 
-:root{
-   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'work-sans', monospace;
+}
+
+:root {
+
     --White: hsl(0, 0%, 100%);
     --lightPink: hsl(275, 100%, 97%);
     --grayishPurple: hsl(292, 16%, 49%);
@@ -15,16 +22,68 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top:1rem;
+
 }
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
 }
-body{
+
+body {
     background-color: var(--lightPink);
+    display: flex;
+    flex-direction: column;
 }
-figure{
-    border-top: 1px var(--grayishPurple) solid;
-    color:var(--darkPurple);
+
+li {
+    border-top: 1.5px rgb(243, 240, 240) solid;
+    display: flex;
+    justify-content: space-between;
+    color: var(--darkPurple);
+    list-style: none;
+    align-items: center;
+    font-size: 0.94rem;
+    padding: 1.3rem 0;
+    font-weight: 600;
+    color: var(--darkPurple);
+    cursor: pointer;
 }
+
+main {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: -12% 0 0 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    width: 45svw;
+
+}
+
+
+
+h1 {
+    font-size: 55px;
+    color: var(--darkPurple);
+
+}
+
+
+picture > img{
+    width: 100vw;
+    position: relative;
+}
+p{
+    padding-bottom: 1.3rem;
+    color: var(--grayishPurple);
+    display: none;
+}
+
+/*
+Class to wrap elements
+*/
 
