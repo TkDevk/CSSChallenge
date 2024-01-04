@@ -1,0 +1,162 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('/assets/fonts/Roboto-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root{
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+body{
+
+    background: var(--charcoalGrey)
+}
+
+section {
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 64svw;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+article > h1{
+    font-size: 48px;
+    margin-top: 60px;
+    color:var(--darkSlateGrey)
+}
+
+section > * {
+    padding-left:40px ;
+    
+}
+
+body > section > img{
+    padding:.8rem 1rem .8rem 2rem;
+    width:420px;
+    
+}
+
+footer{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+input{
+  
+    padding: 10px; /*Block : como columna y inline en una linea continua*/
+    width: 28svw;
+    border-radius: 5px;
+    height: 8svh;
+    border: 1px rgb(222, 221, 221) solid;
+}
+button{
+    margin-top: 20px;
+    width: 28svw;
+    height: 8svh;;
+    padding: 12px;
+    color: var(--White);
+    background-color:  var(--darkSlateGrey);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+li > img{
+    width: 18px;
+    height:18px;
+    align-items: center;
+
+}
+
+li{
+    
+    display: flex;    
+    align-items: center;
+    gap: 10px;
+}
+p{
+    padding: 20px 20px 20px 0;
+    font-weight: 400;
+  
+}
+
+label{
+    font-weight: 600;
+    color:var(--darkSlateGrey);
+    font-size:small;
+
+}
+
+/*Pop up message design*/
+
+.popMsg{
+    
+    width: 460px;
+    background-color: var(--White);
+    border-radius: 20px;
+    border: none;
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    display: none;
+    
+    
+}
+#popIcon{
+    display: flex;
+    margin-left: 0;
+    padding: 0; 
+    width: 50px;
+    height: 50px;
+}
+.popTittle{
+    
+    color:var(--darkSlateGrey);
+    font-weight: 600;
+    font-size: 40px;
+    padding: 0;
+}
+
+.popParr{ 
+    color:var(--darkSlateGrey);
+    padding: 10px;
+}
+.popBtn{
+    background-color: var(--darkSlateGrey);
+    color:var(--White);
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    padding: 0;
+  
+}
