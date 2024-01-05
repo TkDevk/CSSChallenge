@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+  <script src="/script.js"></script>
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,24 +27,27 @@
   <main class="container">
     <section class="main">
       <ul class="header">
-        <li>
-          <label>DAY </label>
-          <input type="number" placeholder="DD">
+        <li class="list">
+          <label for="inputDay">DAY </label>
+          <input id="inputDay" type="number" placeholder="DD">
+          <span class="errorD"></span>
         </li>
-        <li>
-          <label>MONTH </label>
-          <input type="number" placeholder="MM">
+        <li class="list">
+          <label for="inputMonth">MONTH </label>
+          <input id="inputMonth" type="number" placeholder="MM">
+          <span class="errorM"></span>
         </li>
-        <li>
-          <label>YEAR</label>
-          <input type="number" placeholder="YY">
+        <li class="list">
+          <label for="inputYear">YEAR</label>
+          <input id="inputYear" type="number" placeholder="YY">
+          <span class="errorY"></span>
         </li>
       </ul>
       <article class="overBreak">
         <figure class="break"></figure>
-        <button><figure>
-          <img src="./assets/images/icon-arrow.svg" alt="Icon arrow">
-        </figure></button>
+        <figure class="switchIcon" onclick="printDate()">
+          <img  src="./assets/images/icon-arrow.svg" alt="Icon arrow">
+        </figure>
       </article>
       <footer>
         <p><span id="years">-- </span>years</p>
